@@ -1,0 +1,28 @@
+/**
+ * layout/login.css
+ */
+.login-screen {
+  background-color: #64b044;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 3000;
+}
+
+.login-form {
+  height: 200px;
+  margin: -100px auto auto -200px;
+  position: fixed;
+  top: 50%; left: 50%;
+  text-align: center;
+  width: 400px;
+}
+
+.login-form input,
+.login-form button {
+  width: 100%;
+}
+
+.login-btn {
+  background-color: #4E8338;
+  color: white;
+}

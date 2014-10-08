@@ -1,0 +1,17 @@
+<header class="header row clearfix">
+  <nav class="tabs header-tabs">
+    <a class="tab" ui-sref="chats.show({ chatId: chat.id })" ui-sref-active="tab-active" ng-repeat="chat in chats">
+      <div class="box tab-content">
+        <img ng-src="{{ chat.messages.data[chat.messages.data.length - 1].author.data.avatar }}" ng-if="chat.messages.data.length > 0" class="box-feature tab-icon">
+        <div class="box-body">
+          <span ng-repeat="contact in chat.recipients.data">
+            {{ contact.name }}<span ng-if="!$last">, </span>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a class="tab tab-active header-new-chat" ng-click="newChat()"><i class="fa fa-plus"></i></a>
+  </nav> 
+</header>
+
+<main class="chat" ui-view></main>

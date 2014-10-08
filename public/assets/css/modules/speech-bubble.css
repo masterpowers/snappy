@@ -1,0 +1,37 @@
+/*--------------------------*\
+    Speech Bubble Module
+\*--------------------------*/
+.speech-bubble {
+  background-color: #e9eaed;
+  border-bottom: thin solid #ddd;
+  border-radius: 20px;
+  color: #222;
+  margin-left: 20px;
+  padding: 15px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.speech-bubble-alt {
+  margin-left: auto;
+  margin-right: 20px;
+  text-align: right;
+}
+
+.speech-bubble::before {
+  border-color: transparent #e9eaed;
+  border-style: solid;
+  border-width: 10px 15px 10px 0;
+  content: "\00A0";
+  display: block;
+  height: 0;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%; left: -10px;
+  width: 0;
+}
+
+.speech-bubble-alt::before {
+  border-width: 10px 0 10px 15px;
+  right: -10px; left: auto;
+}

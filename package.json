@@ -1,0 +1,17 @@
+{
+  "name": "snappy",
+  "version": "1.0.0",
+  "description": "Snapshot chat shop",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-concat": "^2.4.1",
+    "gulp-concat-css": "^1.0.0",
+    "gulp-minify-css": "^0.3.10"
+  }
+}

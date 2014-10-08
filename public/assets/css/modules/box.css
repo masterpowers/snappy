@@ -1,0 +1,18 @@
+/*--------------------------*\
+    Box Module
+\*--------------------------*/
+.box, .box-body {
+  overflow: hidden;
+  position: relative;
+  zoom: 1;
+}
+
+.box-feature {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.box-feature-alt {
+  float: right;
+  margin: 0 0 0 10px;
+}

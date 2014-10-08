@@ -1,0 +1,13 @@
+/*--------------------------*\
+    Header Module
+\*--------------------------*/
+.header {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.header-title {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 20px;
+}

@@ -1,0 +1,39 @@
+<header class="chat-header">
+  <form ng-submit="addContact(contactId)">
+    <select ng-model="contactId">
+      <option value="{{ contact.id }}" ng-repeat="contact in contacts">{{ contact.name }}</option>
+    </select>
+    <button type="submit" class="btn btn-primary">add</button>
+  </form>
+</header>
+
+<div class="chat-messages">
+  <div class="media chat-message" ng-class="{ 'chat-message-alt': user.id === message.author.data.id }" ng-repeat="message in chat.messages.data">
+    <div class="media-feature" ng-class="{ true: 'media-feature-alt', false: 'media-feature' }[user.id === message.author.data.id]">
+      <img ng-src="{{ message.author.data.avatar }}" height="40" class="avatar avatar-circle">
+    </div>
+    <div class="media-body clearfix">
+      <p class="speech-bubble" ng-class="{ 'speech-bubble-alt': user.id === message.author.data.id }" ng-if="message.type === 'text'">
+        {{ message.content }}
+      </p>
+      <img ng-src="{{ message.content }}" ng-if="message.type === 'image'">
+      <small class="chat-message-author">{{ message.author.data.name }}</small>
+    </div>
+  </div>
+
+  <div id="messages-bottom"></div>
+</div>
+
+<footer class="chat-footer row">
+  <div class="chat-form clearfix">
+    <form ng-submit="postMessage(message, 'text')">
+      <input type="text" class="input input-lg" placeholder="Write a message..." ng-model="message">
+    </form>
+  </div>
+  <div class="chat-webcam">
+    <div class="camera-preview">
+      <div id="camera-preview-content"></div>
+    </div>
+    <button class="btn btn-white chat-camera-btn" ng-click="capture()"><i class="fa fa-camera"></i></button>
+  </div>
+</footer>

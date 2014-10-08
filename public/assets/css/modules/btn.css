@@ -1,0 +1,25 @@
+/*--------------------------*\
+    Button Module
+\*--------------------------*/
+.btn {
+  background-color: transparent;
+  border: thin solid transparent;
+  border-radius: 4px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.btn-lg {
+  margin: .5em;
+  padding: 15px 20px;
+}
+
+.btn-primary {
+  background-color: #64b044;
+  color: white;
+}
+
+.btn-white {
+  background-color: white;
+  color: #222;
+}

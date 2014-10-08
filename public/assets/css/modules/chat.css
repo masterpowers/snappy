@@ -1,0 +1,54 @@
+/*--------------------------*\
+    Messages Module
+\*--------------------------*/
+.chat {
+  padding: 60px 0 100px 0;
+}
+
+.chat-footer {
+  background-color: #f1f1f1;
+  max-height: 100px;
+  position: fixed;
+  right: 0; bottom: 0; left: 0;
+}
+
+.chat-webcam {
+  height: 100px;
+  position: fixed;
+  right: 0; bottom: 0;
+  width: 100px;
+}
+
+.camera-preview {
+  background-color: #f1f1f1;
+  box-shadow: 0 -10px 10px -10px rgba(0, 0, 0, 0.5);
+  margin-top: -50px;
+  height: 100px;
+  width: 100px;
+}
+
+.chat-camera-btn {
+  width: 100%;
+}
+
+.chat-messages {
+  padding-bottom: 200px;
+  overflow-y: scroll;
+}
+
+.chat-message {
+  color: #999;
+  margin: 1em;
+}
+
+.chat-message-alt {
+  text-align: right;
+}
+
+.chat-message-author {
+  font-size: 10px;
+}
+
+.chat-form form {
+  width: 100%;
+}

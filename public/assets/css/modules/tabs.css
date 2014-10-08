@@ -1,0 +1,46 @@
+/*--------------------------*\
+    Tab Module
+\*--------------------------*/
+.tabs {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.tab {
+  background-color: white;
+  border: thin solid #ddd;
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1), inset 0 -4px 5px 0 rgba(0, 0, 0, 0.1);
+  color: #aaa;
+  display: inline-block;
+  font-weight: 700;
+  overflow: hidden;
+  opacity: .6;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: opacity .2s;
+  white-space: nowrap;
+  vertical-align: bottom;
+  max-width: 200px;
+}
+
+.tab:not(.tab-active):hover {
+  opacity: .9;
+}
+
+.tab-content {
+  padding: 10px;
+}
+
+.tab-icon {
+  height: 15px;
+  width: 15px;
+}
+
+.tab-active {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  color: #111;
+  cursor: default;
+  opacity: 1;
+}

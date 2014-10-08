@@ -1,0 +1,60 @@
+/**
+ * base.css
+ * Add base styling to page elements and some helper classes.
+ */
+html,
+body,
+.container {
+  min-height: 100%;
+}
+
+body {
+  background-color: white;
+  font: 200 1em/1.2 "Roboto", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.camera {
+  background-color: #111;
+  position: fixed;
+  bottom: 0; right: 0;
+  z-index: 2000;
+}
+
+.camera-capture {
+  width: 100%;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: none;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}

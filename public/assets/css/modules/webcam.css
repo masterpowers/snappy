@@ -1,0 +1,16 @@
+/*--------------------------*\
+    Webcam Module
+\*--------------------------*/
+.webcam {
+  position: fixed;
+  right: 5px; bottom: 5px;
+  z-index: 2000;
+}
+
+.camera-content {
+  margin-bottom: 5px;
+}
+
+.webcam-capture {
+  width: 100%;
+}
